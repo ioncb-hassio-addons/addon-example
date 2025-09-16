@@ -146,7 +146,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/ha-addons-edge
+          repository: ${{ github.repository_owner }}/repository-edge
           event-type: update
           client-payload: >
             {
@@ -170,7 +170,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/ha-addons
+          repository: ${{ github.repository_owner }}/repository
           event-type: update
           client-payload: >
             {
