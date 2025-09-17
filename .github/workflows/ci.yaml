@@ -30,6 +30,34 @@ jobs:
     steps:
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v5
+      - name: ⤵️ Sanitize text files (LF + Unicode spaces)
+        run: |
+          cd "${{ needs.information.outputs.target }}"
+          UNICODE_SPACES_REGEX=$'[\u00A0\u2002\u2003\u2007\u2008\u2009\u202F\u205F\u3000\u200B]'
+          find . -type f | while read -r file; do
+            MIME_TYPE=$(file --mime-type -b "$file")
+            if [[ "$MIME_TYPE" == text/* ]]; then
+              echo "Sanitizing $file"
+              perl -CSD -pe "
+                s/${UNICODE_SPACES_REGEX}/ /g;
+                s/\r$//;
+              " "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+            fi
+          done
+      - name: ⤵️ Make all scripts executable
+        run: |
+          cd "${{ needs.information.outputs.target }}"
+          find . -type f \( -iname "*.sh" -o -path "*/s6-rc.d/*/run" -o -path "*/s6-rc.d/*/finish" \) -exec chmod u+x {} \;
+      - name: ⤵️ Assert no mixed CRLF/LF remain
+        uses: ymwymw/check-mixed-line-endings@v2
+      - name: 🚀 Commit if needed
+        uses: EndBug/add-and-commit@v9
+        with:
+          commit: -u
+          message: "GitHub bot: sanitize (spaces + LF endings) & chmod"
+          default_author: github_actions
+          pull: --rebase --autostash
+          fetch: --tags --force
       - name: 🚀 Run add-on information action
         id: information
         uses: frenck/action-addon-information@v1.4.2
