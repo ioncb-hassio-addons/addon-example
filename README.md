@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Example
+# IonCB Home Assistant Add-on: Example
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -69,7 +69,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2017-2025 Jhon Coronel
+Copyright (c) 2017-2025 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
