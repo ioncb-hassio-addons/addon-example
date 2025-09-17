@@ -26,11 +26,11 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Jhon Coronel <ghoozh@gmail.com>" \
+    maintainer="Jhon Coronel <dev.jhon.pe@gmail.com.>" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
-    org.opencontainers.image.authors="Jhon Coronel <ghoozh@gmail.com>" \
+    org.opencontainers.image.authors="Jhon Coronel <dev.jhon.pe@gmail.com.>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
