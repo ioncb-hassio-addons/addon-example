@@ -68,7 +68,7 @@ jobs:
       - name: ⤵️ Assert no mixed CRLF/LF remain
         uses: ymwymw/check-mixed-line-endings@8bb313fe0d51144268ee1ffdd66cf130130fc0e7 # v2.0.0
       - name: 🚀 Commit if needed
-        uses: EndBug/add-and-commit@050a66787244b10a4874a2a5f682130263edc192 # v9.0.0
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
         with:
           commit: -u
           message: "GitHub bot: sanitize (spaces + LF endings) & chmod"
