@@ -1,24 +1,21 @@
-# IonCB Home Assistant Add-on: Example
+# IonCB Home Assistant App: Example
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
 [![License][license-shield]](LICENSE.md)
 
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-Example add-on by Community Home Assistant add-ons.
+Example app by Community Home Assistant Apps.
 
 ## About
 
-This is an example add-on for Home Assistant. When started, it displays a
+This is an example app for Home Assistant. When started, it displays a
 random quote every 5 seconds.
 
 It shows off several features and structures like:
@@ -33,7 +30,7 @@ It shows off several features and structures like:
 - Small use of the Bash function library in our base images.
 - The use of Docker label schema.
 
-[:books: Read the full add-on documentation][docs]
+[:books: Read the full app documentation][docs]
 
 ## Support
 
@@ -58,18 +55,18 @@ The original setup of this repository is by [Jhon Coronel][jhoncb].
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
-## We have got some Home Assistant add-ons for you
+## We have got some Home Assistant Apps for you
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
+We have created multiple apps for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
 
 MIT License
 
-Copyright (c) 2017-2025 Franck Nijhof
+Copyright (c) 2017-2026 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -91,22 +88,19 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/ioncb-hassio-addons/addon-example.svg
-[commits]: https://github.com/ioncb-hassio-addons/addon-example/commits/main
-[contributors]: https://github.com/ioncb-hassio-addons/addon-example/graphs/contributors
-[docs]: https://github.com/ioncb-hassio-addons/addon-example/blob/main/example/DOCS.mdu=jhoncb
+[commits-shield]: https://img.shields.io/github/commit-activity/y/ioncb-hassio-addons/app-example.svg
+[commits]: https://github.com/ioncb-hassio-addons/app-example/commits/main
+[contributors]: https://github.com/ioncb-hassio-addons/app-example/graphs/contributors
+[docs]: https://github.com/ioncb-hassio-addons/app-example/blob/main/example/DOCS.mdu=jhoncb
 [jhoncb]: https://github.com/jhoncb
-[github-actions-shield]: https://github.com/ioncb-hassio-addons/addon-example/workflows/CI/badge.svg
-[github-actions]: https://github.com/ioncb-hassio-addons/addon-example/actions
+[github-actions-shield]: https://github.com/ioncb-hassio-addons/app-example/workflows/CI/badge.svg
+[github-actions]: https://github.com/ioncb-hassio-addons/app-example/actions
 [github-sponsors-shield]: https://jhoncb.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/jhoncb
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[issue]: https://github.com/ioncb-hassio-addons/addon-example/issues
-[license-shield]: https://img.shields.io/github/license/ioncb-hassio-addons/addon-example.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[issue]: https://github.com/ioncb-hassio-addons/app-example/issues
+[license-shield]: https://img.shields.io/github/license/ioncb-hassio-addons/app-example.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[releases-shield]: https://img.shields.io/github/release/ioncb-hassio-addons/addon-example.svg
-[releases]: https://github.com/ioncb-hassio-addons/addon-example/releases
+[releases-shield]: https://img.shields.io/github/release/ioncb-hassio-addons/app-example.svg
+[releases]: https://github.com/ioncb-hassio-addons/app-example/releases
 [repository]: https://github.com/ioncb-hassio-addons/repository
