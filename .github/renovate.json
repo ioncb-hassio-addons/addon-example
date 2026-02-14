@@ -42,6 +42,11 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
     }
   ]
 }
