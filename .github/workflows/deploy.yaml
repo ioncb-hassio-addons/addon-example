@@ -219,7 +219,7 @@ jobs:
         uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697 # v4.0.1
         with:
           token: ${{ secrets.DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/${{ inputs.repository_edge }}
+          repository: ${{ github.repository_owner }}/${{ inputs.repository_edge || 'repository-edge' }}
           event-type: update
           client-payload: >
             {
@@ -243,7 +243,7 @@ jobs:
         uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697 # v4.0.1
         with:
           token: ${{ secrets.DISPATCH_TOKEN }}
-          repository: ${{ github.repository_owner }}/${{ inputs.repository }}
+          repository: ${{ github.repository_owner }}/${{ inputs.repository || 'repository' }}
           event-type: update
           client-payload: >
             {
