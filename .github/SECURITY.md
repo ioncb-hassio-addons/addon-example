@@ -1,23 +1,23 @@
 # Security Policy
 
-If you believe you have found a security vulnerability in this repository,
-please report it via [GitHub Security Advisories](https://github.com/ioncb-hassio-addons/addon-example/security/advisories).
+We take the security of this project seriously. We appreciate your efforts to
+responsibly disclose your findings and will make every effort to acknowledge
+your contributions.
 
-**Please DO NOT report security vulnerabilities publicly. So
-do not create a GitHub issue for it!**
+## Reporting a Vulnerability
 
-## Reporting a vulnerability
+**Please do not report security vulnerabilities through public GitHub issues.**
 
-Please create a [new Security Advisory](https://github.com/ioncb-hassio-addons/addon-example/security/advisories/new)
-with a detailed description of the vulnerability you have discovered.
+If you discover a security vulnerability, please report it via GitHub's private
+vulnerability reporting:
 
-In the report, please include as much information as possible, including:
+1. Navigate to the Security tab of this repository
+2. Click "Report a vulnerability"
+3. Provide a description of the vulnerability and steps to reproduce
 
-- A extensive description of the vulnerability.
-- How it could be exploited.
-- The potential impact you think it would have (e.g., DOS attackable, privacy
-  concerns, leaking of credentials).
-- Steps for reproducing the vulnerability.
-- Code (if any), that is needed for reproducing the issue.
-- If you have an idea for a fix, patch or any other adjustment for mitigating
-  the vulnerability reported.
+After the initial report, we will keep you informed of the progress towards a
+fix and may ask for additional information or guidance.
+
+We aim to address reported vulnerabilities within 90 days.
+
+Thank you for helping keep this project secure!
