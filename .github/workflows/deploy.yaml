@@ -42,13 +42,8 @@ jobs:
     uses: ./.github/workflows/ci.yaml
 
   information:
-    if: |
-      github.event_name == 'release'
-      || (
-        github.event_name == 'workflow_run'
-        && github.event.workflow_run.conclusion == 'success'
-      )
     name: ℹ️ Gather add-on information
+    needs: ci
     runs-on: ubuntu-latest
     outputs:
       architectures: ${{ steps.information.outputs.architectures }}
